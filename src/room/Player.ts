@@ -1,11 +1,6 @@
 import { Socket } from "socket.io";
 import { generateToken } from "../server/events";
 import RoomManager from "../managers/RoomManager";
-import {
-    EngeenierTankBody,
-    HeavyTankBody,
-    TankBody,
-} from "../GameObjects/TankBody";
 import { Tank } from "../GameObjects/Tanks/Tank";
 
 class Player {

@@ -1,7 +1,7 @@
 import GameManager from "../../managers/GameManager";
 import { quadColliderMesh, satCollide, updateShape } from "../../modules/SAT";
 import GameObject from "../GameObject";
-import { TankBody } from "../TankBody";
+// import { TankBody } from "../TankBody";
 import Wall from "../Walls/Wall";
 
 export class Build extends GameObject {
@@ -96,8 +96,8 @@ export class GoldBuild extends Build {
 
     onCollide(posX: number, posY: number, gameObject: GameObject): void {
         if (gameObject.tag == "tank") {
-            const tankBody = gameObject as TankBody;
-            tankBody.gold += 5;
+            // const tankBody = gameObject as TankBody;
+            // tankBody.gold += 5;
 
             this.destroyObject();
         }

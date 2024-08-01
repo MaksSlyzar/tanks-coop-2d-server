@@ -3,7 +3,6 @@ import { quadColliderMesh, satCollide, updateShape } from "../../modules/SAT";
 import { BaseBuild, GoldBuild } from "../Builds/Builds";
 import GameObject from "../GameObject";
 import { Projectile } from "../Projectiles/Projectiles";
-import { TankBody } from "../TankBody";
 
 export class Enemy extends GameObject {
     _type: "test" | "none";
@@ -149,12 +148,12 @@ export class TestEnemy extends Enemy {
 
         // console.log(gameObject.tag);
 
-        if (gameObject.tag == "tank") {
-            const tank = gameObject as TankBody;
-            tank.decraseHp(1.01);
-            this.damageTarget = tank;
-            this.setCooldown();
-        }
+        // if (gameObject.tag == "tank") {
+        //     const tank = gameObject as TankBody;
+        //     tank.decraseHp(1.01);
+        //     this.damageTarget = tank;
+        //     this.setCooldown();
+        // }
 
         if (gameObject.tag == "base") {
             const base = gameObject as BaseBuild;
